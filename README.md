@@ -14,8 +14,11 @@ Encrypt values in the ENV file as it could potentially expose the server (as the
 config/enc.php (holds enc keys)
 
 2. Create a new artisian command for encryption called “encrypt_this” at
+
 app/console/commands/ 
+
 $> artisan make:command encrypt_this
+
 
 3. Get individual cyphers for all / specific env vars (as per need) via the new command; replace them in env file. For example 
 $> php artisan encrypt `xyz`
