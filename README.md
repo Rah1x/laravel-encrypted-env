@@ -4,11 +4,15 @@ Save encrypt values in the ENV file instead of plain text
 
 https://blog.fortrabbit.com/how-to-keep-a-secret
 
-Case:
+**Case:**
+
 Encrypt values in the ENV file as it could potentially expose the server (as they are in plain text)
 
-STEPS:
-1. new file: config/enc.php (holds enc keys)
+**STEPS:**
+
+1. new file: 
+config/enc.php (holds enc keys)
+
 2. Create a new artisian command for encryption called “encrypt_this” at
 app/console/commands/ 
 $> artisan make:command encrypt_this
